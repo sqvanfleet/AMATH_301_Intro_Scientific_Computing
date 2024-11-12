@@ -1,0 +1,4 @@
+{
+    "open_tunnel": "ssh -4 -f -N -M -S ~/.ssh/socket -L 27000:MLCL2024.lic.uw.edu:27000 -L 27010:MLCL2024.lic.uw.edu:27010 gradescopetunnel@doppio.amath.washington.edu",
+    "close_tunnel": "ssh -S ~/.ssh/socket -O exit gradescopetunnel@doppio.amath.washington.edu"
+}

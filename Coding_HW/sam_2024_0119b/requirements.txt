@@ -1,0 +1,8 @@
+pipreqs
+subprocess32
+click
+ipython==7.*
+nbformat
+pathlib
+numpy
+matplotlib

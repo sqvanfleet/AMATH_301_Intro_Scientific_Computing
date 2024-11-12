@@ -1,0 +1,8 @@
+#!/usr/bin/env bash 
+ssh -4 -f -N -M -S ~/.ssh/socket -L 27000:MLCL2024.lic.uw.edu:27000 -L 27010:MLCL2024.lic.uw.edu:27010 gradescopetunnel@doppio.amath.washington.edu
+# Run the testing script
+# python3 /autograder/source/run_grader.py
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+gsgrade_gradescope
+ssh -S ~/.ssh/socket -O exit gradescopetunnel@doppio.amath.washington.edu
